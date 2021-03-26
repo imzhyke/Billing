@@ -12,7 +12,7 @@ namespace Billing
    
         protected void Page_Load(object sender, EventArgs e)
         {
-            dateTxtB.Text = DateTime.UtcNow.Date.ToString("mm/dd/yyyy");
+            dateTxtB.Text = DateTime.Now.ToString("MM/dd/yyyy");
 
         }
 
