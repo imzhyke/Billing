@@ -11,7 +11,23 @@ namespace Billing
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
 
+        }
+
+        protected void submitBtn_Click(object sender, EventArgs e)
+        {
+            Table1.Visible = true;
+
+            int qtyTvSold = Convert.ToInt32(tvSoldTxtB.Text);
+            int qtyWPSold = Convert.ToInt32(waterPurSoldTxtB.Text);
+            int qtyDVDSold = Convert.ToInt32(dvdSoldTxtB.Text);
+            int qtyACSold = Convert.ToInt32(airconSoldTxtB.Text);
+
+            tvQty.Text = qtyTvSold.ToString();
+            watPurQty.Text = qtyWPSold.ToString();
+            dvdQty.Text = qtyDVDSold.ToString();
+            airConQty.Text = qtyACSold.ToString();
         }
     }
 }
