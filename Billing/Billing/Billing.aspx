@@ -76,7 +76,7 @@
                 <asp:TextBox ID="nameTxtB" runat="server" Width="350px" CssClass="auto-style5"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Date" CssClass="thirdLabel"></asp:Label>
                 <asp:Label ID="Label4" runat="server" Text=":" ></asp:Label>
-                <asp:TextBox ID="dateTxtB" runat="server" CssClass="auto-style11" Enabled="False">03/26/2021</asp:TextBox>
+                <asp:TextBox ID="dateTxtB" runat="server" CssClass="auto-style11" Enabled="False"></asp:TextBox>
             </div>
             <div>
                 <asp:Label ID="Label5" runat="server" Text="Address" CssClass="secondLabel"></asp:Label>
@@ -111,7 +111,7 @@
             <div class="auto-style9">
 
                 <asp:Button ID="submitBtn" runat="server"  Text="Submit" BackColor="#284E8A" BorderStyle="None" Font-Bold="True" ForeColor="White" Height="35px" Width="100px" CssClass="auto-style8" OnClick="submitBtn_Click" />
-                <asp:Button ID="cancelBtn" runat="server"  Text="Cancel" BackColor="#284E8A" BorderStyle="None" Font-Bold="True" ForeColor="White" Height="35px" Width="100px" CssClass="auto-style8" />
+                <asp:Button ID="cancelBtn" runat="server"  Text="Cancel" BackColor="#284E8A" BorderStyle="None" Font-Bold="True" ForeColor="White" Height="35px" Width="100px" CssClass="auto-style8" Enabled="False" OnClick="cancelBtn_Click" />
                
             </div>
         </div>
@@ -170,7 +170,7 @@
                     <asp:TableCell runat="server" ForeColor="White">###></asp:TableCell>
                     <asp:TableCell runat="server" ForeColor="White">###></asp:TableCell>
                     <asp:TableCell runat="server" >TOTAL</asp:TableCell>
-                    <asp:TableCell runat="server"  HorizontalAlign="Right" ID="totalPrice" Font-Underline="True"></asp:TableCell>
+                    <asp:TableCell runat="server"  HorizontalAlign="Right" ID="totalPrice" Font-Underline="True" Font-Bold="True"></asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
 
